@@ -6,7 +6,7 @@ services:
     container_name: db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: laravel_form_app
+      MYSQL_DATABASE: myapp
       MYSQL_USER: user
       MYSQL_PASSWORD: root
     ports:
