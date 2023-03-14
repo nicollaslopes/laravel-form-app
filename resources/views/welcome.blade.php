@@ -26,24 +26,24 @@
                     <p>Por favor, preencha os campos abaixo para enviar seu currículo:</p>
                 </div>
                 <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="form-control" id="nome" required>
+                    <label for="name">name</label>
+                    <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
                     <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" >
                 </div>
                 <div class="form-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" class="form-control" id="telefone" placeholder="(00) 00000-0000" >
+                    <label for="phone">Telefone</label>
+                    <input type="text" name="phone" class="form-control" id="phone" placeholder="(00) 00000-0000" >
                 </div>
                 <div class="form-group">
-                    <label for="cargo">Cargo desejado</label>
-                    <textarea class="form-control" name="cargo_desejado" id="cargo" rows="2" ></textarea>
+                    <label for="desired_job">Cargo desejado</label>
+                    <textarea class="form-control" name="desired_job" id="desired_job" rows="2" ></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="escolaridade">Escolaridade</label>
-                    <select class="form-control" name="escolaridade" id="escolaridade" >
+                    <label for="schooling">Escolaridade</label>
+                    <select class="form-control" name="schooling" id="schooling" >
                         <option value="">Selecione uma opção</option>
                         <option value="fundamental">Ensino Fundamental completo</option>
                         <option value="medio">Ensino Médio completo</option>
@@ -52,12 +52,12 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="observacoes">Observações</label>
-                    <textarea class="form-control" name="observacoes" id="observacoes" rows="3"></textarea>
+                    <label for="observations">Observações</label>
+                    <textarea class="form-control" name="observations" id="observations" rows="3"></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="arquivo">Selecione o arquivo ( <i> Extensões permitidas: .doc, .docx ou .pdf </i> )</label>
-                    <input type="file" name="arquivo" class="form-control" id="arquivo" >
+                    <label for="file">Selecione o arquivo ( <i> Extensões permitidas: .doc, .docx ou .pdf </i> )</label>
+                    <input type="file" name="file" class="form-control" id="file" >
                 </div>
                 <div class="col-lg-12" style="text-align: right;">
                     <button type="submit" class="btn btn-primary ml-auto">Enviar</button>
