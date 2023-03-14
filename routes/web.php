@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/form/save', [FormController::class, 'teste'])->name('form.save');
+Route::post('/form/save', [FormController::class, 'create'])->name('form.save');
