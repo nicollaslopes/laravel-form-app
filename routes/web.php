@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FormController;
+use App\Http\Controllers\CandidateController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/form/save', [FormController::class, 'create'])->name('form.save');
+Route::post('/form/save', [CandidateController::class, 'create'])->name('form.save');
