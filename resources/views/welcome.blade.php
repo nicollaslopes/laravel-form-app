@@ -19,7 +19,7 @@
     </head>
     <body class="antialiased">
         <div class="container d-flex justify-content-center">
-            <form method="POST" action="{{ route('form.save') }}">
+            <form method="POST" action="{{ route('form.create') }}">
                 @csrf
                 <div class="mt-4">
                     <h3>Formulário</h3>
@@ -31,19 +31,19 @@
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" >
+                    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" required>
                 </div>
                 <div class="form-group">
                     <label for="phone">Telefone</label>
-                    <input type="text" name="phone" class="form-control" id="phone" placeholder="(00) 00000-0000" >
+                    <input type="text" name="phone" class="form-control" id="phone" placeholder="(00) 00000-0000" required>
                 </div>
                 <div class="form-group">
                     <label for="desired_job">Cargo desejado</label>
-                    <textarea class="form-control" name="desired_job" id="desired_job" rows="2" ></textarea>
+                    <textarea class="form-control" name="desired_job" id="desired_job" rows="2" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="schooling">Escolaridade</label>
-                    <select class="form-control" name="schooling" id="schooling" >
+                    <select class="form-control" name="schooling" id="schooling" required>
                         <option value="">Selecione uma opção</option>
                         <option value="fundamental">Ensino Fundamental completo</option>
                         <option value="medio">Ensino Médio completo</option>
@@ -53,11 +53,11 @@
                 </div>
                 <div class="form-group">
                     <label for="observations">Observações</label>
-                    <textarea class="form-control" name="observations" id="observations" rows="3"></textarea>
+                    <textarea class="form-control" name="observations" id="observations" rows="3" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="file">Selecione o arquivo ( <i> Extensões permitidas: .doc, .docx ou .pdf </i> )</label>
-                    <input type="file" name="file" class="form-control" id="file" >
+                    <input type="file" name="file" class="form-control" id="file" required>
                 </div>
                 <div class="col-lg-12" style="text-align: right;">
                     <button type="submit" class="btn btn-primary ml-auto">Enviar</button>
