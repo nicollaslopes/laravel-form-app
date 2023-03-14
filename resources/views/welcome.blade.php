@@ -19,7 +19,7 @@
     </head>
     <body class="antialiased">
         <div class="container d-flex justify-content-center">
-            <form>
+            <form method="POST" action="{{ route('form.save') }}">
                 @csrf
                 <div class="mt-4">
                     <h3>Formulário</h3>
