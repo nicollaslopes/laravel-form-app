@@ -19,7 +19,7 @@ Este é um projeto de um app de envio de currículos.
 
 ## Configurando o Mailtrap
 
-- Acesse a url `https://mailtrap.io/signin`
+- Acesse a url `https://mailtrap.io/signin` e crie uma conta
 - Menu lateral "Email Testing" -> "Inboxes" -> "My Inbox"
 - Na parte de "Integrations" selecione "Laravel 7+" e em seguinda altere as variáveis do arquivo `.env` de acordo com o que será gerado
 ```
