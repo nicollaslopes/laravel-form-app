@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreCandidateRequest;
 use App\Http\Services\CandidateService;
-use App\Models\Candidate;
 use Illuminate\Http\Request;
 
 class CandidateController extends Controller
@@ -12,6 +12,6 @@ class CandidateController extends Controller
     {
         CandidateService::create($request);
 
-        return view('welcome');
+        return redirect('/')->withSuccess('Currículo enviado com sucesso!');
     }
 }

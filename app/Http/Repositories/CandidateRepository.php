@@ -11,7 +11,7 @@ class CandidateRepository implements CandidateInterface
     {
         $clientIP = request()->ip();
 
-        Candidate::create([
+        $candidate = Candidate::create([
             'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->phone,
@@ -21,5 +21,7 @@ class CandidateRepository implements CandidateInterface
             'file' => $request->file,
             'ip' => $clientIP
         ]);
+
+        dd($candidate);
     }
 }
