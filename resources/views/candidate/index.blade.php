@@ -9,12 +9,14 @@
 <body>
     <h2>Dados do candidato: </h2>
     <ul>
+        <hr>
         <li> Nome: {{ $data['name'] }} </li> 
         <li> Email: {{ $data['email'] }} </li> 
         <li> Telefone: {{ $data['phone'] }} </li> 
-        <li> Cargo desejado: {{ $data['name'] }} </li>
+        <li> Cargo desejado: {{ $data['desired_job'] }} </li>
         <li> Escolaridade: {{ $data['schooling'] }} </li> 
         <li> Observações: {{ $data['observations'] }} </li> 
+        <li> Arquivo: <a href="{{ asset('storage/' . $data['file']) }}" download>Download</a> </li> 
     </ul>
 
 </body>
