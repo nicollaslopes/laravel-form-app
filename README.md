@@ -3,7 +3,7 @@ Este é um projeto de um app de envio de currículos.
 ## Tecnologias utilizadas 
 
 - Laravel 
-- PHP v8.1 
+- PHP v8.2 
 - MySQL 
 - Docker 
 
