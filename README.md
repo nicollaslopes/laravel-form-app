@@ -32,3 +32,5 @@ MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=test@gmail.com
 MAIL_FROM_NAME=test@gmail.com
 ```
+
+<img src="public/img/image-email.png" alt="image-email.png">
