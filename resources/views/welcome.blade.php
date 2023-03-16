@@ -59,7 +59,7 @@
                 </div>
                 <div class="form-group">
                     <label for="observations">Observações</label>
-                    <textarea class="form-control" name="observations" id="observations" rows="3" required></textarea>
+                    <textarea class="form-control" name="observations" id="observations" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="file">Selecione o arquivo ( <i> Extensões permitidas: .doc, .docx ou .pdf </i> )</label>

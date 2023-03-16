@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreCandidateRequest;
 use App\Http\Services\CandidateService;
 use Illuminate\Http\Request;
 

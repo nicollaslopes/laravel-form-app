@@ -22,6 +22,5 @@ class CandidateRepository implements CandidateInterface
             'ip' => $clientIP
         ]);
 
-        dd($candidate);
     }
 }
