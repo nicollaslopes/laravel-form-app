@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email', 100);
             $table->string('desired_job', 100);
             $table->string('schooling', 50);
-            $table->text('observations');
+            $table->text('observations')->nullable();
             $table->string('file');
             $table->string('ip');
             $table->timestamps();
