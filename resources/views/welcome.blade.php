@@ -32,7 +32,7 @@
                     <p>Por favor, preencha os campos abaixo para enviar seu currículo:</p>
                 </div>
                 <div class="form-group">
-                    <label for="name">name</label>
+                    <label for="name">Nome</label>
                     <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group">
