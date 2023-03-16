@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -34,7 +35,7 @@ class SendMail extends Mailable
             replyTo: [
                 new Address('test@gmail.com', 'Nome teste'),
             ],
-            subject: 'Send Mail',
+            subject: 'Dados do candidato',
         );
     }
 
@@ -55,6 +56,11 @@ class SendMail extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        $path = "storage/" . $this->data['file'];
+
+        return [
+            Attachment::fromPath($path)
+                    ->withMime('application/pdf'),
+        ];
     }
 }

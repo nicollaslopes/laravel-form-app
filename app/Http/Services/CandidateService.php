@@ -27,10 +27,11 @@ class CandidateService
         $data = [
             'name' => $request->name,
             'email' => $request->email,
-            'phone' => $request->email,
+            'phone' => $request->phone,
             'desired_job' => $request->desired_job,
             'schooling' => $request->schooling,
             'observations' => $request->observations,
+            'file' => $request->file,
         ];
 
         CandidateService::sendEmail($data);
